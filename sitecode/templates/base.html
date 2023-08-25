@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link href="https://db.onlinewebfonts.com/c/29800a9e7d146302b8ed9ad2f848db63?family=Druk+Wide+Web+Bold+Regular"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static\css\main.css">
+    {% block css %}{% endblock css %}
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'skills' %}">Skills</a></li>
+            <li><a href="{% url 'work' %}">Work</a></li>
+            <li><a href="{% url 'orgs' %}">Organizations</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    {% block body %}{% endblock body %}
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="static\js\script.js"></script>
+</body>
+
+</html>
